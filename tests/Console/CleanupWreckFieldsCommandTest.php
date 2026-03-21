@@ -63,7 +63,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $wreckField->save();
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         // Verify the wreck field was deleted
         $wreckFieldAfter = WreckField::where('galaxy', $this->planet->galaxy)
@@ -97,7 +97,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $initialShips = $this->getPlanetUnitAmount($this->planet, 'light_fighter');
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         // Refresh the planet from the database
         $this->planet->refresh();
@@ -132,7 +132,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $initialShips = $this->getPlanetUnitAmount($this->planet, 'light_fighter');
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         $this->planet->refresh();
 
@@ -165,7 +165,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $initialShips = $this->getPlanetUnitAmount($this->planet, 'light_fighter');
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         // Verify wreck field still exists
         $wreckFieldAfter = WreckField::where('galaxy', $this->planet->galaxy)
@@ -210,7 +210,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $initialCruisers = $this->getPlanetUnitAmount($this->planet, 'cruiser');
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         // Get final ship counts
         $this->planet->refresh();
@@ -256,7 +256,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $wreckField2->save();
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         // Verify expired wreck field was deleted
         $wreckField1After = WreckField::where('galaxy', 1)
@@ -293,7 +293,7 @@ class CleanupWreckFieldsCommandTest extends TestCase
         $wreckField->save();
 
         // Run the command
-        $this->artisan('ogame:wreck-fields:cleanup');
+        $this->artisan('ogamex:scheduler:cleanup-wreckfields');
 
         // Verify the wreck field still exists
         $wreckFieldAfter = WreckField::where('galaxy', $this->planet->galaxy)
