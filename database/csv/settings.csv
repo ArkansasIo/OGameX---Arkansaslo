@@ -1,0 +1,68 @@
+key,default_value,description
+game_name,OGameX,Name of the game shown in the UI
+universe_name,Universe,Name of the universe/server
+number_of_galaxies,9,Total number of galaxies in the universe
+battle_engine,rust,Battle engine to use (rust or php)
+fleet_speed_war,1,Speed multiplier for war fleet missions
+fleet_speed_holding,1,Speed multiplier for holding/ACS fleet missions
+fleet_speed_peaceful,1,Speed multiplier for peaceful fleet missions
+economy_speed,1,Economy speed multiplier (affects resource production)
+research_speed,1,Research speed multiplier
+basic_income_metal,30,Base metal income per hour per planet
+basic_income_crystal,15,Base crystal income per hour per planet
+basic_income_deuterium,0,Base deuterium income per hour per planet
+basic_income_energy,0,Base energy income per planet
+registration_planet_amount,1,Number of planets created for new player on registration
+planet_fields_bonus,0,Bonus fields added to every newly created planet
+dark_matter_bonus,8000,Dark matter awarded when player levels up via merchant
+alliance_combat_system_on,1,Whether the Alliance Combat System (ACS) is enabled (1=on 0=off)
+alliance_cooldown_days,3,Days a player must wait after leaving an alliance before joining/creating another
+debris_field_from_ships,30,Percentage of destroyed ship resources converted to a debris field
+debris_field_from_defense,0,Percentage of destroyed defense resources converted to a debris field
+debris_field_deuterium_on,0,Whether deuterium is included in debris fields (1=on 0=off)
+wreck_field_min_resources_loss,150000,Minimum total resources lost in battle to trigger wreck field formation
+wreck_field_min_fleet_percentage,5,Minimum percentage of fleet destroyed required for wreck field formation
+wreck_field_lifetime_hours,72,How many hours a wreck field remains before disappearing
+wreck_field_repair_max_hours,12,Maximum repair time in hours for ships in a wreck field
+wreck_field_repair_min_minutes,30,Minimum repair time in minutes for ships in a wreck field
+maximum_moon_chance,20,Maximum percentage chance of moon formation after a battle
+ignore_empty_systems_on,0,Skip empty galaxy systems when browsing the galaxy view (1=on 0=off)
+ignore_inactive_systems_on,0,Skip inactive player systems in the galaxy view (1=on 0=off)
+defense_repair_rate,70,Percentage chance that destroyed defenses are repaired after a battle
+hamill_manoeuvre_chance,1000,1-in-N chance of a Light Fighter destroying a Deathstar (Hamill Manoeuvre)
+highscore_admin_visible,0,Whether admin accounts appear in the public highscore rankings (1=on 0=off)
+dark_matter_initial,8000,Dark matter given to every new player on account creation
+dark_matter_regen_enabled,0,Whether dark matter regenerates automatically over time (1=on 0=off)
+dark_matter_regen_amount,150000,Amount of dark matter regenerated per period
+dark_matter_regen_period,604800,Regeneration period in seconds (default 604800 = 1 week)
+expedition_dark_matter_multiplier,1.0,Global multiplier applied to all expedition dark matter rewards
+expedition_dark_matter_min_pathfinder,300,Minimum dark matter reward for expeditions with a Pathfinder
+expedition_dark_matter_max_pathfinder,400,Maximum dark matter reward for expeditions with a Pathfinder
+expedition_dark_matter_min_no_pathfinder,150,Minimum dark matter reward for expeditions without a Pathfinder
+expedition_dark_matter_max_no_pathfinder,200,Maximum dark matter reward for expeditions without a Pathfinder
+commanding_staff_cost_per_week,42500,Dark matter cost per week to keep the Commanding Staff active
+player_class_change_cost,500000,Dark matter cost for changing a player's character class
+merchant_cost_per_use,3500,Dark matter cost each time the in-game merchant is used
+planet_relocation_cost,240000,Dark matter cost to relocate a planet
+planet_relocation_duration,86400,Duration in seconds for planet relocation (default 86400 = 24 hours)
+bonus_expedition_slots,0,Extra expedition slots added on top of the technology-based calculation
+expedition_reward_multiplier_resources,1.0,Multiplier applied to resource rewards from expeditions
+expedition_reward_multiplier_ships,1.0,Multiplier applied to ship rewards from expeditions
+expedition_reward_multiplier_dark_matter,1.0,Multiplier applied to dark matter rewards from expeditions
+expedition_reward_multiplier_items,1.0,Multiplier applied to item rewards from expeditions
+expedition_weight_ships,17.9,Relative probability weight for the 'gain ships' expedition outcome
+expedition_weight_resources,36.8,Relative probability weight for the 'gain resources' expedition outcome
+expedition_weight_delay,7.9,Relative probability weight for the 'fleet delayed' expedition outcome
+expedition_weight_speedup,2.9,Relative probability weight for the 'fleet sped up' expedition outcome
+expedition_weight_nothing,26.3,Relative probability weight for the 'nothing happens' expedition outcome
+expedition_weight_black_hole,0.2,Relative probability weight for the 'black hole / fleet lost' expedition outcome
+expedition_weight_pirates,3.0,Relative probability weight for the 'pirate attack' expedition outcome
+expedition_weight_aliens,1.5,Relative probability weight for the 'alien attack' expedition outcome
+expedition_weight_dark_matter,7.9,Relative probability weight for the 'gain dark matter' expedition outcome
+expedition_weight_merchant,0.4,Relative probability weight for the 'merchant visit' expedition outcome
+expedition_weight_items,0,Relative probability weight for the 'gain item' expedition outcome
+rules_content,,Server rules page content (BBCode)
+legal_content,,Legal notice page content (BBCode)
+privacy_policy_content,,Privacy policy page content (BBCode)
+terms_content,,Terms and conditions page content (BBCode)
+contact_content,,Contact page content (BBCode)

@@ -1,0 +1,11 @@
+id,machine_name,cost_metal,cost_crystal,cost_deuterium,hull,shield,attack,requirements
+401,rocket_launcher,2000,0,0,2000,20,80,shipyard:1
+402,light_laser,1500,500,0,2000,25,100,shipyard:2|laser_technology:3
+403,heavy_laser,6000,2000,0,8000,100,250,shipyard:4|laser_technology:6|energy_technology:3
+404,gauss_cannon,20000,15000,2000,35000,200,1100,shipyard:6|weapon_technology:3|shielding_technology:1|energy_technology:6
+405,ion_cannon,2000,6000,0,8000,500,150,shipyard:4|ion_technology:4
+406,plasma_turret,50000,50000,30000,100000,300,3000,shipyard:8|plasma_technology:7
+407,small_shield_dome,10000,10000,0,20000,2000,1,shipyard:1|shielding_technology:2
+408,large_shield_dome,50000,50000,0,100000,10000,1,shipyard:6|shielding_technology:6
+502,anti_ballistic_missile,8000,2000,0,8000,1,1,missile_silo:2|shipyard:1
+503,interplanetary_missile,12500,2500,10000,15000,1,12000,missile_silo:4|shipyard:1|impulse_drive:1
